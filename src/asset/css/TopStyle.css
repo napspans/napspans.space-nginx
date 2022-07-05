@@ -1,0 +1,240 @@
+
+
+@keyframes move {
+  0% {
+   background-position: 100% 0px;
+  }
+  50% {
+   background-position: 0 0px;
+  }
+  100% {
+    background-position: 100% 0px;
+   }
+  
+}
+
+body
+{
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+a
+{
+  color: rgb(255, 145, 0);
+  text-decoration: none;
+
+  transition: all 0.3s ease 0s;
+}
+a:hover
+{
+  color: rgb(255, 123, 0);
+}
+
+.bg {
+  background: linear-gradient(-30deg, rgba(0, 0, 0, 0.7), rgba(212, 103, 0, 0.6)),
+  url(../images/backimageblur.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  
+  z-index: -1;
+} 
+
+.CenterText{
+  /*font-family: 'Righteous', cursive;*/
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 10px;
+
+  font-size: 6vw;
+  /*font-weight: 100;*/
+
+  color: white;
+}
+
+
+.mask {
+  margin: 0 auto;
+
+  width: 35vh;
+  height: 40vh;
+  /* margin: 0 auto; */
+  animation: move 150s infinite;
+  transform: rotate(0.0001deg);
+  background-image: url(../images/backimage.jpg);
+  background-size: cover;
+  mask: url(../images/ahiruIcon.svg);
+  -webkit-mask: url(../images/ahiruIcon.svg);
+  mask-size: cover;
+  -webkit-mask-size: cover;
+
+  margin-bottom: 50px;
+}
+
+.BlogLinks
+{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.MainLinks
+{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.BlogLinks a
+{
+  margin: 20px;
+
+  display: block;
+
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+
+  transition: all 0.3s ease 0s;
+}
+.BlogLinks a:hover
+{
+  color: rgb(255, 123, 0);
+}
+
+.BlogLinks a img
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.MainLinks a
+{
+  margin: 0 20px;
+
+  display: block;
+
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+
+  transition: all 0.3s ease 0s;
+}
+.MainLinks a:hover
+{
+  color: rgb(255, 123, 0);
+}
+
+.MainLinks a img
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.MainBody
+{
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+
+.Sunspot
+{
+  text-align: center;
+  margin-top: 200px;
+}
+.Sunspot img.Sunspotimg
+{
+  width: 300px;
+  height: 300px;
+}
+.Sunspot video.prominence
+{
+  width: 300px;
+  height: 300px;
+}
+.Sunspot img.SunspotGraph
+{
+  width: 800px;
+  height: 350px;
+
+  filter: invert();
+}
+.Sunspot video.SunspotPast
+{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.Sunspot img.SunspotAndNikkei
+{
+  width: 800px;
+  height: 500px;
+}
+
+/* SP対応 */
+@media screen and (max-width: 480px){
+  .CenterText{
+    margin-top: 7vh;
+    margin-bottom: 20px;
+    font-size: 9vw;
+    /*font-weight: 700;*/
+  }
+
+  .mask {
+    width: 42vh;
+    height: 48vh;
+    margin-bottom: 30px;
+  }
+
+  .MainBody
+  {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+  }
+
+  .Sunspot
+  {
+    margin-top: 50px;
+  }
+  .Sunspot p
+  {
+    text-align: left;
+  }
+  .Sunspot video.SunspotVideo
+  {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  .Sunspot video.prominence
+  {
+    width: 250px;
+    height: 250px;
+  }
+  .Sunspot img.SunspotGraph
+  {
+    width: 99%;
+    height: 150px;
+
+    filter: invert();
+  }
+  
+
+}
