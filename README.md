@@ -21,6 +21,15 @@ NGINX_DEFAULT_CONF=dev.default.conf
 ```
 環境によってコピーするnginx設定ファイル`default.conf`を分けている。
 
+## network
+コンテナ間通信のためネットワークを生成
+```
+docker network create napspans_network
+```
+ymlに記載されているネットワークをクリエイト
+
+cecretbase側のdocker-compose.ymlも同様のネットワークに入るよう設定されている。
+
 ## compose
 ビルド&起動
 ```
