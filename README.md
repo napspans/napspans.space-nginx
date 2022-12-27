@@ -1,5 +1,11 @@
 # napspans.space-nginx
 napspans.space配下のルーティングを行うdocker
+ローカルのnginxからdocker内の仮想ネットワーク内へホスティングする。
+
+# 前提環境
+OSインストール後nginxがインストールされていること。
+ローカルのnginxルーティング設定(defalt.conf)は下記の通り。
+https://gist.github.com/napspans/d58da3d0d98c07a2496d9fb97add3795
 
 # 初期設定
 ## git clone
