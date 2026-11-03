@@ -76,45 +76,11 @@ a:hover
   margin-bottom: 50px;
 }
 
-.BlogLinks
-{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .MainLinks
 {
   display: flex;
   justify-content: center;
   text-align: center;
-}
-
-.BlogLinks a
-{
-  margin: 20px;
-
-  display: block;
-
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-
-  transition: all 0.3s ease 0s;
-}
-.BlogLinks a:hover
-{
-  color: rgb(255, 123, 0);
-}
-
-.BlogLinks a img
-{
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
 }
 
 .MainLinks a
@@ -144,47 +110,6 @@ a:hover
   top: -2px;
 }
 
-.MainBody
-{
-  margin-top: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
-  color: white;
-}
-
-.Sunspot
-{
-  text-align: center;
-  margin-top: 200px;
-}
-.Sunspot img.Sunspotimg
-{
-  width: 300px;
-  height: 300px;
-}
-.Sunspot video.prominence
-{
-  width: 300px;
-  height: 300px;
-}
-.Sunspot img.SunspotGraph
-{
-  width: 800px;
-  height: 350px;
-
-  filter: invert();
-}
-.Sunspot video.SunspotPast
-{
-  width: 300px;
-  height: 300px;
-  margin-bottom: 50px;
-}
-.Sunspot img.SunspotAndNikkei
-{
-  width: 800px;
-  height: 500px;
-}
 
 /* SP対応 */
 @media screen and (max-width: 480px){
@@ -201,40 +126,6 @@ a:hover
     margin-bottom: 30px;
   }
 
-  .MainBody
-  {
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: white;
-  }
-
-  .Sunspot
-  {
-    margin-top: 50px;
-  }
-  .Sunspot p
-  {
-    text-align: left;
-  }
-  .Sunspot video.SunspotVideo
-  {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-  }
-  .Sunspot video.prominence
-  {
-    width: 250px;
-    height: 250px;
-  }
-  .Sunspot img.SunspotGraph
-  {
-    width: 99%;
-    height: 150px;
-
-    filter: invert();
-  }
   
 
 }
