@@ -121,7 +121,7 @@ html
   left: 0;
   right: 0;
   bottom: 0;
-  height: 40px;
+  height: 80px;
   z-index: -1;
   background-color: #211004;
   -webkit-mask-image: linear-gradient(to top, black, transparent);
