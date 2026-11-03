@@ -111,6 +111,32 @@ a:hover
 }
 
 
+/* iOS のステータスバーとツールバーの裏を背景になじませる */
+html
+{
+  background-color: #4a2d18;
+}
+body
+{
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.edge {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 1px;
+  z-index: -1;
+}
+.edge-top {
+  top: 0;
+  background-color: #8c5d3d;
+}
+.edge-bottom {
+  bottom: 0;
+  background-color: #211004;
+}
+
 /* SP対応 */
 @media screen and (max-width: 480px){
   .CenterText{
