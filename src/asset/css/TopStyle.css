@@ -111,30 +111,21 @@ a:hover
 }
 
 
-/* iOS のステータスバーとツールバーの裏を背景になじませる */
+/* iOS のステータスバーとツールバーの色。上端は html の背景色、下端は下に固定した帯の色で塗られる */
 html
 {
-  background-color: #4a2d18;
-}
-body
-{
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
-}
-.edge {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 1px;
-  z-index: -1;
-}
-.edge-top {
-  top: 0;
   background-color: #8c5d3d;
 }
 .edge-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
+  height: 40px;
+  z-index: -1;
   background-color: #211004;
+  -webkit-mask-image: linear-gradient(to top, black, transparent);
+  mask-image: linear-gradient(to top, black, transparent);
 }
 
 /* SP対応 */
@@ -150,6 +141,18 @@ body
     width: 42vh;
     height: 48vh;
     margin-bottom: 30px;
+  }
+
+  /* 縦の真ん中に置く */
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .CenterText {
+    margin-top: 0;
   }
 
   
